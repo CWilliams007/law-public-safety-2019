@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 
+Main CSS File
+Capstone Law & Public Safety 2019 Central Campus
+Date: 4.10.19
+Authors: Chad Williams, Gabriel Fuentes
+*/
+
+.mainLogo {
+    width: 250px;
+    max-width: 250px;
+    border: #4c4c4e 1px solid;
+    box-shadow: #4c4c4e 4px 1px;
+}
+
+nav {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: white;
+    box-shadow: #4c4c4e 4px 2px;
+}
+
+nav div {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    margin-left: 10px;
+    align-content: center;
+    margin-top: 50px;
+}
+
+nav a {
+    align-items: center;
+    color: #4c4c4e;
+    text-decoration: none;
+    font-size: 1.1em;
+    height: 20px;
+    width: 50px;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+article {
+    background: black;
+}
+
+article div {
+    padding-left: 100px;
+}
+
+
+h1 {
+    font-size: 3em;
+    color: orange;
+}
+
+p {
+    color: gray;
+}
