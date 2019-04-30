@@ -9,15 +9,13 @@ Authors: Chad Williams, Gabriel Fuentes
 #mainLogo {
     width: 250px;
     max-width: 250px;
-    border: #4c4c4e 1px solid;
-    box-shadow: #4c4c4e 4px 1px;
 }
 
 nav {
     font-family: 'Courier New', Courier, monospace;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: white;
+    background-color: rgb(228, 127, 11);
     box-shadow: #4c4c4e 4px 2px;
 }
 
@@ -38,8 +36,9 @@ nav div li {
 }
 
 nav div li a {
-    color: #4c4c4e;
-    font-size: 1.1em;
+    color: #f8f8f8;
+    font-size: 1.2em;
+    font-weight: 400;
 }
 
 article {
