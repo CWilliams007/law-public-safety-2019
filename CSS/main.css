@@ -6,14 +6,23 @@ Date: 4.10.19
 Authors: Chad Williams, Gabriel Fuentes
 */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Open Sans Font to use:
+   font-family: 'Open Sans', sans-serif;
+*/
+
 /* Begin Nav Styles */
 #mainLogo {
-    width: 250px;
-    max-width: 250px;
+    width: 150px;
+    max-width: 150px;
+}
+
+nav a {
+    width: 50px;
 }
 
 nav {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Open Sans', sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: rgb(228, 127, 11);
@@ -25,13 +34,13 @@ nav div {
     grid-template-columns: repeat(5, 1fr);
     margin-left: 10px;
     align-content: center;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-right: 350px;
 }
 
 nav div li {
-    height: 20px;
-    width: 50px;
+    height: 5px;
+    padding: 10px;
     list-style-type: none;
     margin: 0px auto;
 }
@@ -40,24 +49,70 @@ nav div li a {
     color: #f8f8f8;
     font-size: 1.2em;
     font-weight: 400;
+    transition: .2s;
+}
+
+
+nav div li a:hover {
+    box-shadow: #4c4c4e 2px 4px 10px;
+    border-radius: 10px;
+    padding: 2px 5px;
 }
 
 /* End Nav Styles */
 
-article {
-    background: black;
+header#heroImage {
+    background: linear-gradient(to right, rgba(143, 86, 0, 0.95) 5%, rgba(0, 0, 0, 0.25)), url(../img/indexBackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 100px 12vw 100px;
 }
 
-article div {
-    padding-left: 100px;
+#heroImage div {
+    /* background: rgba(27, 27, 27, 0.712); */
+    width: 700px;
+    margin: 0px;
 }
 
 
-h1 {
-    font-size: 3em;
-    color: orange;
+#heroImage h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(247, 247, 247);
+    font-size: 80px;
+    text-transform: uppercase;
 }
 
-p {
-    color: gray;
+#heroImage p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#heroImage a {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px white solid;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
+
+#heroImage a:hover {
+    background: white;
+    color: rgb(228, 127, 11);
+}
+
+#heroImage img {
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    width: 300px;
 }
