@@ -6,6 +6,7 @@ Date: 4.10.19
 Authors: Chad Williams, Gabriel Fuentes
 */
 
+/* Begin Nav Styles */
 #mainLogo {
     width: 250px;
     max-width: 250px;
@@ -40,6 +41,8 @@ nav div li a {
     font-size: 1.2em;
     font-weight: 400;
 }
+
+/* End Nav Styles */
 
 article {
     background: black;
