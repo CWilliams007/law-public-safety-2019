@@ -6,7 +6,7 @@ Date: 4.10.19
 Authors: Chad Williams, Gabriel Fuentes
 */
 
-.mainLogo {
+#mainLogo {
     width: 250px;
     max-width: 250px;
     border: #4c4c4e 1px solid;
@@ -15,7 +15,6 @@ Authors: Chad Williams, Gabriel Fuentes
 
 nav {
     font-family: 'Courier New', Courier, monospace;
-    display: inline;
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: white;
@@ -24,21 +23,23 @@ nav {
 
 nav div {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-columns: repeat(5, 1fr);
     margin-left: 10px;
     align-content: center;
     margin-top: 50px;
+    margin-right: 350px;
 }
 
-nav a {
-    align-items: center;
-    color: #4c4c4e;
-    text-decoration: none;
-    font-size: 1.1em;
+nav div li {
     height: 20px;
     width: 50px;
-    margin: 0px 0px;
-    text-align: center;
+    list-style-type: none;
+    margin: 0px auto;
+}
+
+nav div li a {
+    color: #4c4c4e;
+    font-size: 1.1em;
 }
 
 article {
