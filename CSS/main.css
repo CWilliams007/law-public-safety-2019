@@ -13,8 +13,7 @@ Authors: Chad Williams, Gabriel Fuentes
 
 /* Begin Nav Styles */
 #mainLogo {
-    width: 150px;
-    max-width: 150px;
+    width: 175px;
 }
 
 nav a {
@@ -67,7 +66,7 @@ header#heroImage {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 100px 12vw 100px;
+    padding: 100px 12vw 180px;
 }
 
 #heroImage div {
@@ -102,7 +101,6 @@ header#heroImage {
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-radius: 50px;
 }
 
 #heroImage a:hover {
