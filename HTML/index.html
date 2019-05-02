@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!-- 
 Main HTML File
@@ -17,15 +16,29 @@ Authors: Chad Williams, Gabriel Fuentes
 </head>
 
 <body>
+    <div class="topnav">
+        <!-- Top Navigation Menu -->
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
     <nav>
         <a href="#"><img src="../img/mainLogo.png" id="mainLogo" alt=""></a>
-                <div>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ctso.html">CTSO</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </div>
+        <div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ctso.html">CTSO</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
     </nav>
 
     <header id="heroImage">
@@ -38,12 +51,31 @@ Authors: Chad Williams, Gabriel Fuentes
         </div>
     </header>
 
-    <article>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <article id="pictureWrapper">
 
     </article>
 
 
-    <script src="main.js" async defer></script>
+    <article id="contentWrapper">
+        <div id="content">
+
+        </div>
+
+        <div>
+
+        </div>
+
+    </article>
+
+
+    <script src="../JS/main.js" async defer></script>
 </body>
 
 </html>

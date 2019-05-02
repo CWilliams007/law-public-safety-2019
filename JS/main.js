@@ -6,3 +6,6 @@ Authors: Chad Williams, Gabriel Fuentes
 */
 "use strict";
 
+function myFunction() {
+    document.getElementById("myLinks").classList.toggle("mobileNav");
+}
