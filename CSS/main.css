@@ -99,23 +99,23 @@ nav div span {
 
 nav div li a:before {
     content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  bottom: 0;
-  left: 0;
-  background: rgb(57, 57, 59);
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: rgb(57, 57, 59);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 nav div li a:hover:before {
     visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 /* End Nav Styles */
@@ -188,14 +188,15 @@ article#contentWrapper {
 #content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px;
+    padding: 50px 50px 25px 50px;
     border-radius: 5px;
     max-width: 1150px;
     width: 85%;
     margin: 0px auto;
     position: relative;
     top: -50px;
-    background: white;
+    background: rgb(71, 71, 71);
+    color: white;
 }
 
 #content h1 {
@@ -213,7 +214,35 @@ article#contentWrapper {
 }
 
 #content div {
-    align-content: center;
+    text-align: center;
+}
+
+#content div i {
+    font-size: 140px;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+#content div img {
+    height: 170px;
+    position: relative;
+    padding-top: 10px;
+}
+
+#content div:last-of-type img {
+    height: 200px;
+    position: relative;
+    top: -25px;
+}
+
+#content div:last-of-type p {
+    position: relative;
+    top: -25px;
+}
+
+#content div p {
+    padding: 10px;
+    font-size: 1.2em;
 }
 
 .icon {
@@ -224,6 +253,21 @@ article#contentWrapper {
     color: white;
     background: orange;
     padding: 10px;
+}
+
+#break {
+    background: linear-gradient(to right, rgba(143, 86, 0, 0.95) 5%, rgba(0, 0, 0, 0.25)), url(../crimetape.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+}
+
+#CTSO {
+    background: white;
+    text-align: center;
 }
 
 
@@ -241,7 +285,18 @@ article#contentWrapper {
     nav div span {
         display: block;
     }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 10px;
+    }
+
+    #content div img {
+        height: 100px;
+    }
+
+
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    /* @media only screen and (min-width: 992px) {} */
