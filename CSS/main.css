@@ -165,6 +165,8 @@ article#contentWrapper {
     background: rgb(20, 20, 20);
 }
 
+
+/* Index Content */
 #content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -183,6 +185,7 @@ article#contentWrapper {
     text-align: center;
     font-weight: 600;
 }
+
 #content hr {
     color: rgb(228, 127, 11);
     background-color: rgb(228, 127, 11);
@@ -191,7 +194,9 @@ article#contentWrapper {
     margin: 0 auto;
 }
 
-
+#content div {
+    align-content: center;
+}
 
 .icon {
     position: relative;
