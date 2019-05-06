@@ -6,6 +6,7 @@ Authors: Chad Williams, Gabriel Fuentes
 */
 "use strict";
 
-function myFunction() {
-    document.getElementById("myLinks").classList.toggle("mobileNav");
+
+function mobileNavToggle() {
+    document.getElementById("mobile").classList.toggle("open")
 }
