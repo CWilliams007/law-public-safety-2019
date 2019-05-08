@@ -11,7 +11,7 @@ Authors: Chad Williams, Gabriel Fuentes
    font-family: 'Open Sans', sans-serif;
 */
 
-body {
+* {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -311,8 +311,7 @@ article#contentWrapper {
     max-width: 500px;
 }
 
-#about div a {
-    font-family: 'Open Sans', sans-serif;
+button#iPhoto, button#curriculum  {
     color: white;
     font-size: 22px;
     text-decoration: none;

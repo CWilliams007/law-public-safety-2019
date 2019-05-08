@@ -6,7 +6,22 @@ Authors: Chad Williams, Gabriel Fuentes
 */
 "use strict";
 
+window.addEventListener('load', init);
+
+function init() {
+	// body...
+	document.addEventListener('click', instructor);
+	mobileNavToggle();
+}
 
 function mobileNavToggle() {
-    document.getElementById("mobile").classList.toggle("open")
+   var mNav =  document.getElementById("mobile").classList.toggle("close");
 }
+
+function instructor(e) {
+	// body...
+	var iPhoto = document.getElementById('iPhoto');
+	
+	var pic = document.createElement("img");
+}
+
