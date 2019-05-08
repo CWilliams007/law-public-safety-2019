@@ -115,6 +115,20 @@ Authors: Chad Williams, Gabriel Fuentes
         </div>
     </article>
 
+    <article id="about2">
+        <h1>Gallery</h1>
+        <hr>
+        <div id="gallery" class="slider autoplay">
+            <img src="gallery1.jpg" alt="">
+
+
+            <img src="gallery2.jpg" alt="">
+
+
+            <img src="gallery3.jpg" alt="">
+            <a href="HTML/gallery.html">See More</a>
+        </div>
+    </article>
 
     <article id="contentWrapper">
         <div class="content" id="ctso">
@@ -132,24 +146,44 @@ Authors: Chad Williams, Gabriel Fuentes
     </article>
 
 
+    <div id="contact">
+        <div>
+            <h1>Contact</h1>
+            <form id="regForm" name="regForm" method="post" action="mas_reg2.html">
+                <fieldset id="contactInfo">
+                    <div>
+                        <label for="fnBox">First Name</label>
+                        <input name="firstName" id="fnBox" type="text" required />
+                    </div>
 
-    <article id="about">
-        <h1>Gallery</h1>
-        <hr>
-        <div id="gallery" class="slider autoplay">
-            <img src="gallery1.jpg" alt="">
-
-
-            <img src="gallery2.jpg" alt="">
-
-
-            <img src="gallery3.jpg" alt="">
-
-
-
-
+                    <div>
+                        <label for="lnBox">Last Name</label>
+                        <input name="lastName" id="lnBox" type="text" required />
+                    </div>
+                    <div> <label for="mailBox">E-mail</label>
+                        <input name="email" id="mailBox" type="email" required /></div>
+                    <div> <label for="phoneBox">Phone Number</label>
+                        <input name="phoneNumber" id="phoneBox" type="tel"
+                            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required
+                            placeholder="(nnn) nnn-nnnn" />
+                    </div>
         </div>
-    </article>
+
+
+
+
+
+
+        </fieldset>
+
+        <input id="regSubmit" type="submit" value="continue" />
+        </form>
+    </div>
+
+
+
+
+
 
 
     <script src="JS/main.js" async defer></script>
