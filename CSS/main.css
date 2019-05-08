@@ -125,7 +125,7 @@ nav div li a:hover:before {
 /* End Nav Styles */
 
 html {
-    background: linear-gradient(to right, rgba(143, 86, 0, 0.95) 5%, rgba(0, 0, 0, 0.25)), url(../img/indexBackground.jpg) no-repeat center fixed;
+    background: linear-gradient(to right, rgba(143, 86, 0, 0.95) 5%, rgba(0, 0, 0, 0.25)), url(indexBackground.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -189,7 +189,7 @@ article#contentWrapper {
 
 
 /* Index Content */
-#content {
+.content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 50px 50px 25px 50px;
@@ -204,48 +204,48 @@ article#contentWrapper {
     line-height: 1.5;
 }
 
-#content h1 {
+.content h1 {
     font-size: 2em;
     text-align: center;
     font-weight: 600;
 }
 
-#content hr {
+.content hr {
     color: rgb(228, 127, 11);
     background-color: rgb(228, 127, 11);
     width: 80%;
-    height: 5px;
+    height: 4px;
     margin: 0 auto;
 }
 
-#content div {
+.content div {
     text-align: center;
 }
 
-#content div i {
+.content div i {
     font-size: 140px;
     margin-top: 20px;
     color: rgba(0, 0, 0, 0.856);
 }
 
-#content div img {
+.content div img {
     height: 170px;
     position: relative;
     padding-top: 10px;
 }
 
-#content div:last-of-type img {
+.content div:last-of-type img {
     height: 200px;
     position: relative;
     top: -25px;
 }
 
-#content div:last-of-type p {
+.content div:last-of-type p {
     position: relative;
     top: -25px;
 }
 
-#content div p {
+.content div p {
     padding: 10px;
     font-size: 1.2em;
 }
@@ -268,46 +268,62 @@ article#contentWrapper {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120px;
+    height: 100px;
 }
 
 /* about styles */
 
 #about {
-    background: black;
+    background: rgba(54, 54, 54, 0.863);
     color: white;
     line-height: 1.5;
 }
 
 #about h1 {
     color: white;
-    font-size: 2em;
-    padding-top: 30px;
-    text-align: center;
+    font-size: 4em;
+    padding-top: 10px;
+    text-align: left;
     font-weight: 600;
+    margin-left: 20%;
+    color: rgb(228, 127, 11);
 }
 
 #about hr {
-    color: rgb(228, 127, 11);
+    color: rgb(199, 162, 0);
     background-color: rgb(228, 127, 11);
-    width: 50%;
-    height: 5px;
-    margin: 0 auto;
+    width: 45%;
+    margin-left: 20%;
     margin-bottom: 5px;
+    height: 2px;
 }
 
 #about div {
     padding: 25px 250px 100px 250px;
     font-size: 1.2em;
-    background: rgb(71, 71, 71);
+    background: rgb(41, 41, 41);
 }
 
 #about div div {
-    padding: 50px 25px 10px 25px;
+    padding: 50px 25px 0px 25px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 500px;
+}
+
+#about div p {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    font-size: 1.1em;
+    line-height: 2;
+}
+
+#about div hr {
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 25%;
 }
 
 #about div a {
@@ -329,15 +345,27 @@ article#contentWrapper {
     color: rgb(228, 127, 11);
 }
 
-#CTSO {
-    margin: 0 auto;
-    background: white;
-    width: 80%;
-    text-align: center;
+/* ctso styles */
+#ctso {
+    display: block;
+    line-height: 1.5;
+    font-size: 1.2em;
 }
 
-#CTSO div {
-    text-align: left;
+#ctso div {
+    margin-top: 40px;
+}
+
+#ctso hr {
+    width: 50%;
+}
+
+/* gallery styles */
+#gallery {}
+
+#gallery img {
+    margin: 0 auto;
+    width: 30%;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -354,13 +382,13 @@ article#contentWrapper {
         display: block;
     }
 
-    #content {
+    .content {
         display: grid;
         grid-template-columns: 1fr;
         font-size: 10px;
     }
 
-    #content div img {
+    .content div img {
         height: 100px;
     }
 
