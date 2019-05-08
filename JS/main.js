@@ -6,20 +6,22 @@ Authors: Chad Williams, Gabriel Fuentes
 */
 "use strict";
 
+window.addEventListener('load', init);
 
-function mobileNavToggle() {
-    document.getElementById("mobile").classList.toggle("open")
+function init() {
+	// body...
+	document.addEventListener('click', instructor);
+	mobileNavToggle();
 }
 
-$(document).ready(function () {
-    $('.slider').slick({
-        setting - name: setting - value;
-    });
-});
+function mobileNavToggle() {
+   var mNav =  document.getElementById("mobile").classList.toggle("close");
+}
 
-$('.autoplay').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-});
+function instructor(e) {
+	// body...
+	var iPhoto = document.getElementById('iPhoto');
+	
+	var pic = document.createElement("img");
+}
+
