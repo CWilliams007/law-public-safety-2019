@@ -125,7 +125,7 @@ nav div li a:hover:before {
 /* End Nav Styles */
 
 html {
-    background: linear-gradient(to right, rgba(143, 86, 0, 0.95) 5%, rgba(0, 0, 0, 0.25)), url(indexBackground.jpg) no-repeat center fixed;
+    background: linear-gradient(to right, rgba(143, 86, 0, 0.95) 5%, rgba(0, 0, 0, 0.25)), url(../img/indexBackground.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
