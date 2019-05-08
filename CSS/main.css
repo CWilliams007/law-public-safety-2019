@@ -15,6 +15,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+div {
+    line-height: 1.5;
+}
+
 /* Begin Nav Styles */
 nav img {
     height: 75px;
@@ -115,8 +119,8 @@ nav div li a:before {
 
 nav div li a:hover:before {
     visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 /* End Nav Styles */
@@ -189,14 +193,16 @@ article#contentWrapper {
 #content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px;
+    padding: 50px 50px 25px 50px;
     border-radius: 5px;
     max-width: 1150px;
     width: 85%;
     margin: 0px auto;
     position: relative;
     top: -50px;
-    background: white;
+    background: rgb(71, 71, 71);
+    color: white;
+    line-height: 1.5;
 }
 
 #content h1 {
@@ -214,7 +220,35 @@ article#contentWrapper {
 }
 
 #content div {
-    align-content: center;
+    text-align: center;
+}
+
+#content div i {
+    font-size: 140px;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+#content div img {
+    height: 170px;
+    position: relative;
+    padding-top: 10px;
+}
+
+#content div:last-of-type img {
+    height: 200px;
+    position: relative;
+    top: -25px;
+}
+
+#content div:last-of-type p {
+    position: relative;
+    top: -25px;
+}
+
+#content div p {
+    padding: 10px;
+    font-size: 1.2em;
 }
 
 .icon {
@@ -227,7 +261,85 @@ article#contentWrapper {
     padding: 10px;
 }
 
+/* div #break, seperates content */
+#break {
+    background: linear-gradient(to right, rgba(143, 86, 0, 0.95) 1%, rgba(0, 0, 0, 0.25)), url(../crimetape.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+}
 
+/* about styles */
+
+#about {
+    background: black;
+    color: white;
+    line-height: 1.5;
+}
+
+#about h1 {
+    color: white;
+    font-size: 2em;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#about hr {
+    color: rgb(228, 127, 11);
+    background-color: rgb(228, 127, 11);
+    width: 50%;
+    height: 5px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+#about div {
+    padding: 25px 250px 100px 250px;
+    font-size: 1.2em;
+    background: rgb(71, 71, 71);
+}
+
+#about div div {
+    padding: 50px 25px 10px 25px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+}
+
+#about div a {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px white solid;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#about a:hover {
+    background: white;
+    color: rgb(228, 127, 11);
+}
+
+#CTSO {
+    margin: 0 auto;
+    background: white;
+    width: 80%;
+    text-align: center;
+}
+
+#CTSO div {
+    text-align: left;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 991px) {
@@ -242,7 +354,32 @@ article#contentWrapper {
     nav div span {
         display: block;
     }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 10px;
+    }
+
+    #content div img {
+        height: 100px;
+    }
+
+
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (max-width: 991px) {
+        nav a {
+            display: none;
+        }
+
+        nav img {
+            height: 75px;
+        }
+
+        nav div span {
+            display: block;
+        }
+    }
+
+    /* @media only screen and (min-width: 992px) {} */
