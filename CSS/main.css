@@ -13,6 +13,7 @@ Authors: Chad Williams, Gabriel Fuentes
 
 * {
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 div {
