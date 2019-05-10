@@ -20,11 +20,6 @@ function mobileNavToggle() {
 
 function instructor(e) {
 	// body...
-	var iButton = document.querySelector('#iButton');
-	var iPhoto = document.querySelector('#iPhoto');
-
-	iButton.addEventListener('click', function(e) {
-		iButton.outerHTML = iPhoto;
-	});
+	
 }
 
