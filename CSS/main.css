@@ -253,6 +253,8 @@ article#contentWrapper {
     font-size: 1.2em;
 }
 
+
+
 .icon {
     position: relative;
     top: 10px;
@@ -356,19 +358,66 @@ button#curriculum {
 }
 
 /* ctso styles */
+
+article#contentWrapper2 {
+    margin-top: 0px;
+    background: rgb(20, 20, 20);
+}
+
+
 #ctso {
-    display: block;
     line-height: 1.5;
     font-size: 1.2em;
 }
 
-#ctso div {
-    margin-top: 40px;
+#ctsoImg {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+}
+
+#ctso2 {
+    text-align: left;
+    padding-left: 10px;
 }
 
 #ctso hr {
     width: 50%;
+    margin-bottom: 10px;
 }
+
+#ctso p {
+    margin-bottom: 40px;
+}
+
+#ctso div {
+    max-height: 400px;
+}
+
+#content {
+    margin-top: 40px;
+}
+
+#ctso a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px white solid;
+    padding: 2px 1px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 200px;
+}
+
+
+#ctso a:hover {
+    background: white;
+    color: rgb(228, 127, 11);
+    transition: .2s;
+}
+
+
+
 
 /* gallery styles */
 #about2 {
@@ -457,7 +506,8 @@ button#curriculum {
 
 /* contact styles */
 #contact {
-    background: rgba(0, 0, 0, 0.767);
+
+    background: rgba(41, 41, 41, 0.767);
     margin: 0 auto;
     padding: 25px 250px 100px 250px;
 }
@@ -483,12 +533,33 @@ button#curriculum {
 }
 
 #contact form input {
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(255, 255, 255, 0.123);
+    padding: 5px;
 }
 
 #contact form label {
     color: orange;
     width: 10%;
+    font-size: 1.4em;
+}
+
+#submit {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px white solid;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#submit:hover {
+    background: white;
+    color: rgb(228, 127, 11);
+    transition: .2s;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

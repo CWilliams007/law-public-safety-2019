@@ -13,7 +13,6 @@ Authors: Chad Williams, Gabriel Fuentes
     <title>Home | Law & Public Safety</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <link rel="stylesheet" href="CSS/destyle.css">
     <link rel="stylesheet" href="CSS/main.css">
 </head>
@@ -73,7 +72,7 @@ Authors: Chad Williams, Gabriel Fuentes
             <div>
                 <h1>Career Technical Education</h1>
                 <hr>
-                <i class="fas fa-graduation-cap"></i>
+                <img src="students-cap.svg" alt="">
                 <p>Experience a Hands-On education that prioritizes real workplace situations and skills employers look
                     for. </p>
             </div>
@@ -130,17 +129,22 @@ Authors: Chad Williams, Gabriel Fuentes
         </div>
     </article>
 
-    <article id="contentWrapper">
+    <article id="contentWrapper2">
         <div class="content" id="ctso">
-            <h1>CTSO</h1>
-            <hr>
             <div>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo pariatur eos odit harum, expedita
-                architecto
-                nihil alias. Pariatur quisquam totam repellat voluptatum? Praesentium quisquam nam minus blanditiis
-                temporibus modi maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dolorum hic.
-                Sapiente illo, nihil itaque odio cum sed illum voluptatum, cupiditate minima laboriosam aliquam nostrum.
-                Accusantium impedit id dolores aliquam.
+                <img id="ctsoImg" src="ctso.jpg" alt="">
+            </div>
+            <div id="ctso2">
+                <h1>CTSO</h1>
+                <hr>
+                Our Career Technical Student Organization of choice is SkillsUSA. We participate in competitive events
+                and help our students make a difference in their communities. Providing soft-skills, resume building
+                experience, and leadership opportunities.
+                <br>
+                <a id="margin" href="#">Upcoming Events</a>
+            </div>
+            <div>
+                <img id="ctsoImg" src="skillsUSA.png" alt="">
             </div>
         </div>
     </article>
@@ -151,32 +155,27 @@ Authors: Chad Williams, Gabriel Fuentes
             <h1>Contact</h1>
             <form id="regForm" name="regForm" method="post" action="mas_reg2.html">
                 <fieldset id="contactInfo">
+                    <label for="fnBox">First Name</label>
                     <div>
-                        <label for="fnBox">First Name</label>
                         <input name="firstName" id="fnBox" type="text" required />
                     </div>
 
+                    <label for="lnBox">Last Name</label>
                     <div>
-                        <label for="lnBox">Last Name</label>
                         <input name="lastName" id="lnBox" type="text" required />
                     </div>
-                    <div> <label for="mailBox">E-mail</label>
+                    <label for="mailBox">E-mail</label>
+                    <div>
                         <input name="email" id="mailBox" type="email" required /></div>
-                    <div> <label for="phoneBox">Phone Number</label>
+                    <label for="phoneBox">Phone Number</label>
+                    <div>
                         <input name="phoneNumber" id="phoneBox" type="tel"
-                            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required
-                            placeholder="(nnn) nnn-nnnn" />
+                            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn) nnn-nnnn" />
                     </div>
         </div>
-
-
-
-
-
-
         </fieldset>
 
-        <input id="regSubmit" type="submit" value="continue" />
+        <input id="submit" type="submit" value="continue" />
         </form>
     </div>
 
