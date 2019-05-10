@@ -355,6 +355,15 @@ button#curriculum {
     transition: .2s;
 }
 
+img.iPhoto {
+    display: none;
+}
+
+img.show {
+    display: block;
+    width: 250px;
+}
+
 /* ctso styles */
 #ctso {
     display: block;
