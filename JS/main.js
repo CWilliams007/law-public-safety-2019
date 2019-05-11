@@ -15,7 +15,7 @@ function init() {
 }
 
 function mobileNavToggle() {
-   var mNav =  document.getElementById("mobile").classList.toggle("close");
+   var mNav =  document.getElementById("mobile").classList.toggle("open");
 }
 
 function instructor(e) {

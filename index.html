@@ -46,7 +46,7 @@ Authors: Chad Williams, Gabriel Fuentes
                 security fields.</p>
             <a href="#">Learn More</a>
 
-            <img src="img/wm-arrows-white-transparent.png" alt="">
+            <img src="wm-arrows-white-transparent.png" alt="">
         </div>
     </header>
 
@@ -54,17 +54,6 @@ Authors: Chad Williams, Gabriel Fuentes
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <article id="pictureWrapper">
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-    </article>
 
 
     <article id="contentWrapper">
@@ -90,9 +79,13 @@ Authors: Chad Williams, Gabriel Fuentes
                 <img src="badgeicon.svg"></img>
                 <p>Experience a new career field and path giving you more options in your interests and skills.</p>
             </div>
+
+        </div>
+        <div id="apply">
+            <h1>Choose Your Path</h1>
+            <a href="https://system.west-mec.org/application/admin_login.php?ReturnPage=application/admin_index.php">Apply Now</a>
         </div>
     </article>
-
 
     <article id="about">
         <h1>About our Program</h1>
@@ -109,7 +102,7 @@ Authors: Chad Williams, Gabriel Fuentes
             <hr>
             <div>
                 <button type="button" id="iPhoto">Instructor</button>
-                <button type="button" id="curriculum">Curriculum</button>
+                <button type="button" id="curriculum"><a href="https://drive.google.com/file/d/1d6qgz_MgtuXLQLLZ6HCf7fkuCaZsmYpn/view">Curriculum</a></button>
             </div>
         </div>
     </article>
@@ -141,43 +134,112 @@ Authors: Chad Williams, Gabriel Fuentes
                 and help our students make a difference in their communities. Providing soft-skills, resume building
                 experience, and leadership opportunities.
                 <br>
-                <a id="margin" href="#">Upcoming Events</a>
+                <div id="center">
+
+                    <a id="margin" href="#">Upcoming Events</a>
+                </div>
             </div>
             <div>
-                <img id="ctsoImg" src="skillsUSA.png" alt="">
+                <img id="ctsoImg2" src="skillsUSA.png" alt="">
             </div>
         </div>
     </article>
 
 
     <div id="contact">
+        <div id="grid">
+            <div>
+                    <h1>Contact</h1>
+                    <form id="regForm" name="regForm" method="post" action="action_page.html" onsubmit="return validateForm()">
+                        <fieldset id="contactInfo">
+                            <label for="fnBox">First Name</label>
+                            <div>
+                                <input name="firstName" id="fnBox" type="text" required />
+                            </div>
+        
+                            <label for="lnBox">Last Name</label>
+                            <div>
+                                <input name="lastName" id="lnBox" type="text" required />
+                            </div>
+                            <label for="mailBox">E-mail</label>
+                            <div>
+                                <input name="email" id="mailBox" type="email" required /></div>
+                            <label for="phoneBox">Phone Number</label>
+                            <div>
+                                <input name="phoneNumber" id="phoneBox" type="tel"
+                                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn) nnn-nnnn" />
+                                </div>
+                            </fieldset>
+                        </form>
+            </div>
+           <div>
+                <div>
+                        <h1>Questions & Comments</h1>
+                        <textarea name="comments" id="" cols="40" rows="10"></textarea>
+                    </div>
+           </div>
+
+          
+        </div>
+        <div id="center">
+
+            <input id="submit" type="submit" value="continue" />
+        </div>
+        </div>
+
+    <footer>
         <div>
             <h1>Contact</h1>
-            <form id="regForm" name="regForm" method="post" action="mas_reg2.html">
-                <fieldset id="contactInfo">
-                    <label for="fnBox">First Name</label>
-                    <div>
-                        <input name="firstName" id="fnBox" type="text" required />
-                    </div>
-
-                    <label for="lnBox">Last Name</label>
-                    <div>
-                        <input name="lastName" id="lnBox" type="text" required />
-                    </div>
-                    <label for="mailBox">E-mail</label>
-                    <div>
-                        <input name="email" id="mailBox" type="email" required /></div>
-                    <label for="phoneBox">Phone Number</label>
-                    <div>
-                        <input name="phoneNumber" id="phoneBox" type="tel"
-                            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn) nnn-nnnn" />
-                    </div>
+            <hr>
+            <p>
+                <a class="underline" href="https://goo.gl/maps/qsMmE73DFyeVN2Ty5">6997 N. Glen Harbor Boulevard
+                    Glendale, AZ 85307</a>
+                    
+                <br>
+                    Main Line & Attendance: <br> 
+                    <a class="underline" href="tel:6232098070">(623) 209-8070</a>
+                    
+            </p>
         </div>
-        </fieldset>
+        <div>
+            <h1>Resources</h1>
+            <hr>
+            <a href="#">Apply Now</a>
+            <a href="#">Tax Credit Donations</a>
+            <a href="https://drive.google.com/file/d/1lIvhbP8W6uSqp4BxICHw-78Wa-deA1Zs/view">Certificates</a>
+            <a href="https://drive.google.com/file/d/1d6qgz_MgtuXLQLLZ6HCf7fkuCaZsmYpn/view">Scope and Sequence</a>
+        </div>
 
-        <input id="submit" type="submit" value="continue" />
-        </form>
-    </div>
+        <div>
+            <h1>Links</h1>
+            <hr>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">CTSO</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+            <a href="#"></a>
+        </div>
+
+        <div>
+            <h1>Social Media</h1>
+            <hr>
+            <div>
+                    <div>
+                        <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                           
+                            
+                        </div>
+                        <div>
+                            <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                           <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            
+                        </div>
+            </div>
+            
+        </div>
+    </footer>
 
 
 
