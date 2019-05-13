@@ -11,7 +11,6 @@ window.addEventListener('load', init);
 function init() {
 	// body...
 	document.addEventListener('click', instructor);
-	mobileNavToggle();
 }
 
 function mobileNavToggle() {
@@ -21,7 +20,10 @@ function mobileNavToggle() {
 function instructor(e) {
 	// body...
 	var iPhoto = document.getElementById('iPhoto');
-	
-	var pic = document.createElement("img");
+	iPhoto.addEventListener('click', instructorToggle());
+}
+
+function instructorToggle(){
+	var iToggle = document.getElementById("instructor").classList.toggle("openInstructor")
 }
 

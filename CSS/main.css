@@ -53,12 +53,13 @@ div.mobileNav {
     background: rgb(228, 127, 11);
     font-family: 'Open Sans', sans-serif;
     color: white;
-    display: block;
+    display: none;
     padding: 20px;
     position: absolute;
     top: -500px;
-    transition: .4s;
     width: 100%;
+    z-index: 100;
+    transition: .4s;
 }
 
 div.mobileNav.open {
@@ -71,13 +72,14 @@ div.mobileNav.open {
     top: 0px;
     padding-top: 90px;
     width: 100%;
+    transition: .4s;
 }
 
 div.mobileNav a {
     display: block;
     font-size: 22px;
     padding: 6px 0;
-
+    transition: .4s;
 }
 
 nav div li a {
@@ -344,8 +346,9 @@ article#contentWrapper {
 #about div div {
     padding: 50px 25px 0px 25px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+}
+
+#aboutButtons {
     max-width: 500px;
 }
 
@@ -389,6 +392,15 @@ button#curriculum {
     transition: .2s;
 }
 
+#instructor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
 /* ctso styles */
 
 article#contentWrapper2 {
@@ -400,6 +412,7 @@ article#contentWrapper2 {
 #ctso {
     line-height: 1.5;
     font-size: 1.2em;
+    text-align: center;
 }
 
 #ctsoImg {
@@ -409,8 +422,8 @@ article#contentWrapper2 {
 }
 
 #ctsoImg2 {
-    width: 70%;
-    margin-top: 30%;
+    width: 100%;
+
 }
 
 #ctso2 {
@@ -476,9 +489,9 @@ article#contentWrapper2 {
 #about2 hr {
     color: rgb(199, 162, 0);
     background-color: rgb(228, 127, 11);
-    width: 25%;
+    width: 45%;
+    margin-left: 35%;
     margin-bottom: 5px;
-    margin-left: 55%;
     height: 2px;
 }
 
@@ -526,7 +539,6 @@ article#contentWrapper2 {
     margin-top: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-left: 40%;
 }
 
 #about2 a:hover {
@@ -536,11 +548,14 @@ article#contentWrapper2 {
 }
 
 /* gallery */
+#gallery {
+    text-align: center;
+}
+
 #gallery img {
     margin: 0 auto;
     width: 30%;
 }
-
 /* contact styles */
 #contact {
     background: rgba(41, 41, 41, 0.767);
@@ -548,9 +563,8 @@ article#contentWrapper2 {
     padding: 25px 250px 100px 250px;
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#grid div {
+    display: block;
 }
 
 #contact h1 {
@@ -662,7 +676,7 @@ footer div div a:hover {
 
 footer h1 {
     color: rgb(221, 137, 11);
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 .underline {
