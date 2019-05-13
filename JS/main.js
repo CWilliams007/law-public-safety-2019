@@ -10,11 +10,20 @@ window.addEventListener('load', init);
 
 function init() {
 	// body...
-	mobileNavToggle();
+	document.addEventListener('click', instructor);
 }
 
 function mobileNavToggle() {
-   var mNav =  document.getElementById("mobile").classList.toggle("close");
-   var iPhoto = document.getElementsByClassName('iPhoto').classList.toggle("show");
+   var mNav =  document.getElementById("mobile").classList.toggle("open");
+}
+
+function instructor(e) {
+	// body...
+	var iPhoto = document.getElementById('iPhoto');
+	iPhoto.addEventListener('click', instructorToggle());
+}
+
+function instructorToggle(){
+	var iToggle = document.getElementById("instructor").classList.toggle("openInstructor")
 }
 
