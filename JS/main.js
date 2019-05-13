@@ -14,16 +14,11 @@ function init() {
 }
 
 function mobileNavToggle() {
-   var mNav =  document.getElementById("mobile").classList.toggle("open");
+	var mNav = document.getElementById("mobile").classList.toggle("open");
 }
 
-function instructor(e) {
-	// body...
-	var iPhoto = document.getElementById('iPhoto');
-	iPhoto.addEventListener('click', instructorToggle());
-}
 
-function instructorToggle(){
-	var iToggle = document.getElementById("instructor").classList.toggle("openInstructor")
-}
 
+function instructorToggle() {
+	document.getElementById("instructor").classList.toggle("closedInstructor")
+}
