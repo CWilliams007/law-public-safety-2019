@@ -73,6 +73,7 @@ div.mobileNav.open {
     padding-top: 90px;
     width: 100%;
     transition: .4s;
+
 }
 
 div.mobileNav a {
@@ -135,6 +136,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 230px;
 }
 
 #heroImage div {
@@ -325,7 +327,7 @@ article#contentWrapper {
     padding-top: 10px;
     text-align: left;
     font-weight: 600;
-    margin-left: 20%;
+    margin-left: 10%;
     color: rgb(228, 127, 11);
 }
 
@@ -660,7 +662,7 @@ article#contentWrapper2 {
 
 #center {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #submit {
@@ -798,6 +800,10 @@ footer h1 {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        * {
+            scroll-behavior: initial;
+        }
+
     }
 
     body {
