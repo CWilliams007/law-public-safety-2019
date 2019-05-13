@@ -15,6 +15,7 @@ Authors: Chad Williams, Gabriel Fuentes
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/destyle.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/animate.css">
 </head>
 
 <body>
@@ -41,13 +42,13 @@ Authors: Chad Williams, Gabriel Fuentes
     </nav>
 
     <header id="heroImage">
-        <div>
+        <div class="animated fadeInLeft">
             <h1>Law, Public Safety & Security</h1>
             <p>A high opportunity program providing students the resources and skills they need to thrive in
                 security fields.</p>
             <a href="#">Learn More</a>
 
-            <img src="wm-arrows-white-transparent.png" alt="">
+            <img src="wm-arrows-white-transparent.png" class="animated fadeInLeft" alt="">
         </div>
     </header>
 
@@ -58,8 +59,8 @@ Authors: Chad Williams, Gabriel Fuentes
 
 
     <article id="contentWrapper">
-        <div class="content">
-            <div>
+        <div class="content wow fadeInUp">
+            <div class="wow fadeInUp">
                 <h1>Career Technical Education</h1>
                 <hr>
                 <img src="students-cap.svg" alt="">
@@ -67,14 +68,14 @@ Authors: Chad Williams, Gabriel Fuentes
                     for. </p>
             </div>
 
-            <div>
+            <div class="wow fadeInUp">
                 <h1>Earn Certifications</h1>
                 <hr>
                 <img src="certificate-with-medal.svg" alt="">
 
                 <p>Earn Industry Approved Certifications, that are sought after by employers in the Security field.</p>
             </div>
-            <div>
+            <div class="wow fadeInUp">
                 <h1>Experience A New Career Field</h1>
                 <hr>
                 <img src="badgeicon.svg"></img>
@@ -82,15 +83,15 @@ Authors: Chad Williams, Gabriel Fuentes
             </div>
 
         </div>
-        <div id="apply">
+        <div id="apply" class="wow fadeIn">
             <h1>Choose Your Path</h1>
             <a href="https://system.west-mec.org/application/admin_login.php?ReturnPage=application/admin_index.php">Apply
                 Now</a>
         </div>
     </article>
 
-    <article id="about">
-        <h1>About our Program</h1>
+    <article id="about" class="wow fadeInLeft">
+        <h1 class="animated fadeInLeft">About our Program</h1>
         <hr>
         <div>
             <p>
@@ -120,7 +121,7 @@ Authors: Chad Williams, Gabriel Fuentes
         </div>
     </article>
 
-    <article id="about2">
+    <article class="wow fadeInRight" id="about2">
         <h1>Gallery</h1>
         <hr>
         <div id="gallery" class="slider autoplay">
@@ -135,12 +136,12 @@ Authors: Chad Williams, Gabriel Fuentes
         </div>
     </article>
 
-    <article id="contentWrapper2">
-        <div class="content" id="ctso">
+    <article class="wow fadeInUp" id="contentWrapper2">
+        <div class="content wow fadeInUp" id="ctso">
             <div>
                 <img id="ctsoImg" src="ctso.jpg" alt="">
             </div>
-            <div id="ctso2">
+            <div class="wow fadeInUp" id="ctso2">
                 <h1>CTSO</h1>
                 <hr>
                 Our Career Technical Student Organization of choice is SkillsUSA. We participate in competitive events
@@ -152,14 +153,14 @@ Authors: Chad Williams, Gabriel Fuentes
                     <a id="margin" href="#">Upcoming Events</a>
                 </div>
             </div>
-            <div>
+            <div class="wow fadeInUp">
                 <img id="ctsoImg2" src="skillsUSA.png" alt="">
             </div>
         </div>
     </article>
 
 
-    <div id="contact">
+    <div class="wow fadeInUp" id="contact">
         <div>
             <div id="grid">
                 <form id="regForm" name="regForm" method="post" action="action_page.html"
@@ -269,7 +270,10 @@ Authors: Chad Williams, Gabriel Fuentes
 
 
 
-
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <script src="JS/main.js" async defer></script>
 </body>
