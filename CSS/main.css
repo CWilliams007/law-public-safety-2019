@@ -338,7 +338,6 @@ article#contentWrapper {
 }
 
 #about div {
-    padding: 25px 250px 100px 250px;
     font-size: 1.2em;
     background: rgb(41, 41, 41);
 }
@@ -393,8 +392,19 @@ button#curriculum {
 }
 
 #instructor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#instructor img {
+    width: 40%;
+}
+
+#instructor h1 {
+    font-size: 1.3em;
+}
+
+#instructor p {
+    font-size: 1em;
 }
 
 
@@ -556,6 +566,7 @@ article#contentWrapper2 {
     margin: 0 auto;
     width: 30%;
 }
+
 /* contact styles */
 #contact {
     background: rgba(41, 41, 41, 0.767);
@@ -727,8 +738,12 @@ footer h1 {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-    
+
+        body {
+            font-size: 10px;
+        }
+
     }
 
-  
+
     /* @media only screen and (min-width: 992px) {} */
