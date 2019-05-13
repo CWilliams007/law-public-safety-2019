@@ -21,21 +21,21 @@ Authors: Chad Williams, Gabriel Fuentes
 
 
     <div class="mobileNav" id="mobile">
-        <a href="#top">Home</a>
-        <a href="#about">About</a>
-        <a href="#CTSO">CTSO</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html#top">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#ctso">CTSO</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
     </div>
 
     <nav>
         <img src="img/mainLogo.png" alt="">
         <div>
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#CTSO">CTSO</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#top">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#ctso">CTSO</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
             <span onclick="mobileNavToggle()"><i class="fas fa-bars"></i></span>
         </div>
     </nav>
@@ -161,18 +161,18 @@ Authors: Chad Williams, Gabriel Fuentes
                     <h1>Contact</h1>
                     <form id="regForm" name="regForm" method="post" action="action_page.html" onsubmit="return validateForm()">
                         <fieldset id="contactInfo">
-                            <label for="fnBox">First Name</label>
+                            <label for="fnBox" >First Name</label>
                             <div>
-                                <input name="firstName" id="fnBox" type="text" required />
+                                <input name="firstName" id="fnBox" type="text" required pattern="^([A-Z][a-z]+)$" placeholder="First Name" />
                             </div>
         
                             <label for="lnBox">Last Name</label>
                             <div>
-                                <input name="lastName" id="lnBox" type="text" required />
+                                <input name="lastName" id="lnBox" type="text" required  pattern="^([A-Z][a-z]+)$" placeholder="Last Name" />
                             </div>
                             <label for="mailBox">E-mail</label>
                             <div>
-                                <input name="email" id="mailBox" type="email" required /></div>
+                                <input name="email" id="mailBox" placeholder="example@gmail.com" type="email" required  pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$" /></div>
                             <label for="phoneBox">Phone Number</label>
                             <div>
                                 <input name="phoneNumber" id="phoneBox" type="tel"

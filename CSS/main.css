@@ -135,6 +135,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 230px;
 }
 
 #heroImage div {
@@ -371,7 +372,7 @@ article#contentWrapper {
     font-family: 'Open Sans', sans-serif;
 }
 
-button#iButton,
+button#iPhoto,
 button#curriculum {
     color: white;
     font-size: 22px;
@@ -609,7 +610,7 @@ article#contentWrapper2 {
 
 #center {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #submit {
