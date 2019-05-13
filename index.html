@@ -24,7 +24,7 @@ Authors: Chad Williams, Gabriel Fuentes
         <a href="#top">Home</a>
         <a href="#about">About</a>
         <a href="#CTSO">CTSO</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#about2">Gallery</a>
         <a href="#contact">Contact</a>
     </div>
 
@@ -34,7 +34,7 @@ Authors: Chad Williams, Gabriel Fuentes
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#CTSO">CTSO</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about2">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
             <span onclick="mobileNavToggle()"><i class="fas fa-bars"></i></span>
         </div>
@@ -103,13 +103,13 @@ Authors: Chad Williams, Gabriel Fuentes
             </p>
             <hr>
             <div id="aboutButtons">
-                <button type="button" id="iPhoto">Instructor</button>
+                <button type="button" onclick="instructorToggle()" id="iPhoto">Instructor</button>
                 <button type="button" id="curriculum"><a
                         href="https://drive.google.com/file/d/1d6qgz_MgtuXLQLLZ6HCf7fkuCaZsmYpn/view">Curriculum</a></button>
             </div>
         </div>
 
-        <div id="instructor">
+        <div id="instructor" class="closedInstructor">
             <img src="gallery1.jpg" alt="">
             <div id="instructor2">
                 <h1>Mrs. Johnson</h1>
@@ -168,20 +168,21 @@ Authors: Chad Williams, Gabriel Fuentes
                     <fieldset id="contactInfo">
                         <label for="fnBox">First Name</label>
                         <div>
-                            <input name="firstName" id="fnBox" type="text" required />
+                            <input name="firstName" id="fnBox" type="text" required placeholder="First Name" />
                         </div>
 
                         <label for="lnBox">Last Name</label>
                         <div>
-                            <input name="lastName" id="lnBox" type="text" required />
+                            <input name="lastName" id="lnBox" type="text" required placeholder="Last Name" />
                         </div>
                         <label for="mailBox">E-mail</label>
                         <div>
-                            <input name="email" id="mailBox" type="email" required /></div>
+                            <input name="email" id="mailBox" type="email" required placeholder="Email" />
+                        </div>
                         <label for="phoneBox">Phone Number</label>
                         <div>
                             <input name="phoneNumber" id="phoneBox" type="tel"
-                                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn) nnn-nnnn" />
+                                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(555) 555-5555" />
                         </div>
                     </fieldset>
                 </form>
