@@ -665,6 +665,10 @@ article#contentWrapper2 {
     margin-top: 20px;
 }
 
+#center2 {
+    text-align: center;
+}
+
 #submit {
     color: white;
     font-size: 22px;
@@ -750,6 +754,11 @@ footer h1 {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 991px) {
+
+    #grid {
+        display: block;
+    }
+
     nav a {
         display: none;
     }
@@ -779,6 +788,19 @@ footer h1 {
     nav {
         min-height: 75px;
     }
+
+    .content div:last-of-type img {
+        height: 130px;
+        position: relative;
+        top: -25px;
+    }
+
+    #ctsoImg2 {
+        width: 60%;
+        margin-top: 50px;
+        filter: drop-shadow(2px 2px 2px white);
+    }
+
 }
 
 
@@ -800,10 +822,10 @@ footer h1 {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        * {
-            scroll-behavior: initial;
-        }
+    }
 
+    * {
+        scroll-behavior: initial;
     }
 
     body {
