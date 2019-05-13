@@ -326,7 +326,7 @@ article#contentWrapper {
     padding-top: 10px;
     text-align: left;
     font-weight: 600;
-    margin-left: 20%;
+    margin-left: 10%;
     color: rgb(228, 127, 11);
 }
 
@@ -758,6 +758,10 @@ footer h1 {
 
         body {
             font-size: 10px;
+        }
+
+        * {
+            scroll-behavior: auto;
         }
 
     }
