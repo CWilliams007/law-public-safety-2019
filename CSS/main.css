@@ -341,7 +341,7 @@ article#contentWrapper {
 #about div {
     font-size: 1.2em;
     background: rgb(41, 41, 41);
-    padding: 20px;
+    padding: 10px;
 }
 
 #about div div {
@@ -443,7 +443,7 @@ article#contentWrapper2 {
 
 #ctsoImg2 {
     width: 100%;
-
+    filter: drop-shadow(2px 2px 2px white);
 }
 
 #ctso2 {
@@ -584,8 +584,31 @@ article#contentWrapper2 {
     padding: 25px 250px 100px 250px;
 }
 
-#grid div {
-    display: block;
+
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#grid a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px white solid;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.397);
+}
+
+#grid a:hover {
+    background: white;
+    color: rgb(228, 127, 11);
+    transition: .2s;
 }
 
 #contact h1 {
@@ -622,6 +645,19 @@ article#contentWrapper2 {
     font-size: 1.4em;
 }
 
+#contact hr {
+    width: 50%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    width: 45%;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+#contact p {
+    color: white;
+}
+
 #center {
     text-align: center;
     margin-top: 10px;
@@ -637,7 +673,7 @@ article#contentWrapper2 {
     letter-spacing: 2px;
     max-width: 200px;
     margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.397);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.205);
 }
 
 #submit:hover {
@@ -717,7 +753,7 @@ footer h1 {
     }
 
     nav img {
-        height: 75px;
+        min-height: 100px;
     }
 
     nav div span {
@@ -734,32 +770,41 @@ footer h1 {
         height: 100px;
     }
 
-
-
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (max-width: 991px) {
-        nav a {
-            display: none;
-        }
-
-        nav img {
-            height: 75px;
-        }
-
-        nav div span {
-            display: block;
-        }
-
-        footer {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        body {
-            font-size: 10px;
-        }
-
+    nav div span i {
+        font-size: 600%;
     }
 
+    nav {
+        min-height: 75px;
+    }
+}
 
-    /* @media only screen and (min-width: 992px) {} */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 991px) {
+    nav a {
+        display: none;
+    }
+
+    nav img {
+        height: 75px;
+    }
+
+    nav div span {
+        display: block;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+}
+
+
+/* @media only screen and (min-width: 992px) {} */

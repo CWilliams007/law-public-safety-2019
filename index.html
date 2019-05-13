@@ -160,11 +160,12 @@ Authors: Chad Williams, Gabriel Fuentes
 
 
     <div id="contact">
-        <div id="grid">
-            <div>
-                <h1>Contact</h1>
+        <div>
+            <div id="grid">
                 <form id="regForm" name="regForm" method="post" action="action_page.html"
                     onsubmit="return validateForm()">
+                    <h1>Contact</h1>
+                    <hr>
                     <fieldset id="contactInfo">
                         <label for="fnBox">First Name</label>
                         <div>
@@ -184,22 +185,29 @@ Authors: Chad Williams, Gabriel Fuentes
                             <input name="phoneNumber" id="phoneBox" type="tel"
                                 pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(555) 555-5555" />
                         </div>
+                        <div id="center">
+                            <input id="submit" type="submit" value="continue" />
+                        </div>
                     </fieldset>
                 </form>
-            </div>
-            <div>
+
                 <div>
-                    <h1>Questions & Comments</h1>
-                    <textarea name="comments" id="" cols="40" rows="10"></textarea>
+                    <h1>Apply Now</h1>
+                    <hr>
+                    <p>Apply for a seat in this high-opportunity program for the next school year. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Rerum voluptas molestias sapiente magnam officiis qui minima
+                        reprehenderit, distinctio deleniti rem vero quo quis, cum eius, deserunt provident veniam est
+                        dolorem.</p>
+                    <div id="center">
+                        <a href="#">Apply Now</a>
+                    </div>
                 </div>
             </div>
 
 
-        </div>
-        <div id="center">
 
-            <input id="submit" type="submit" value="continue" />
         </div>
+
     </div>
 
     <footer>
