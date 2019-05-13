@@ -761,7 +761,7 @@ footer h1 {
         }
 
         * {
-            scroll-behavior: auto;
+            scroll-behavior: initial;
         }
 
     }
