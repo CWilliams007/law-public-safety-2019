@@ -323,7 +323,7 @@ article#contentWrapper {
 
 #about h1 {
     color: white;
-    font-size: 4em;
+    font-size: 4vw;
     padding-top: 10px;
     text-align: left;
     font-weight: 600;
@@ -335,7 +335,7 @@ article#contentWrapper {
     color: rgb(199, 162, 0);
     background-color: rgb(228, 127, 11);
     width: 45%;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-bottom: 5px;
     height: 2px;
 }
@@ -517,18 +517,14 @@ article#contentWrapper2 {
     height: 2px;
 }
 
-#about2 div {
-    padding: 25px 250px 75px 250px;
+#gallery {
+    padding: 25px 250px 30px 250px;
     font-size: 1.2em;
     background: rgb(41, 41, 41);
 }
 
-#about2 div div {
-    padding: 50px 25px 0px 25px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 500px;
+#gallery div {
+    padding-bottom: 40px;
 }
 
 
@@ -577,6 +573,7 @@ article#contentWrapper2 {
 #gallery img {
     margin: 0 auto;
     width: 30%;
+    margin-bottom: 30px;
 }
 
 /* contact styles */
@@ -831,7 +828,196 @@ footer h1 {
     body {
         font-size: 10px;
     }
+
+    .content hr {
+        color: rgb(228, 127, 11);
+        background-color: rgb(228, 127, 11);
+        width: 40%;
+        height: 4px;
+        margin: 0 auto;
+    }
+
+    .content div h1 {
+        font-size: 5vw;
+    }
+
+    .content div img {
+        height: 30vw;
+    }
+
+    .content div p {
+        font-size: 4vw;
+    }
+
+    .content div:last-of-type img {
+        height: 30vw;
+    }
+
+    #apply {
+        font-size: 3vw;
+    }
+
+    #apply a {
+        font-size: 3vw;
+    }
+
+    #about {
+        font-size: 3vw;
+    }
+
+    #about h1 {
+        font-size: 8vw;
+    }
+
+    #about hr {
+        margin-left: 10%;
+        width: 75%;
+    }
+
+    #about button {
+        font-size: 4vw;
+        max-width: 100%;
+    }
+
+    #aboutButtons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+    }
+
+    #about2 {
+        font-size: 2vw;
+    }
+
+
+
+    #gallery img {
+        width: 30vw;
+    }
+
+    #gallery {
+        padding: 50px;
+    }
+
+    #about2 #gallery a {
+        font-size: 4vw;
+    }
+
+    #ctso {
+        font-size: 4vw;
+    }
+
+    #ctso h1 {
+        font-size: 5vw;
+    }
+
+
+
+    #ctso div {
+        max-height: 800px;
+    }
+
+    #ctso a {
+        font-size: 3vw;
+    }
+
+    #contact {
+        font-size: 3vw;
+    }
+
+    footer {
+        font-size: 2vw;
+    }
 }
 
 
 /* @media only screen and (min-width: 992px) {} */
+@media only screen and (max-width: 769px) {
+    .content div h1 {
+        font-size: 2vw;
+    }
+
+    .content div img {
+        height: 15vw;
+    }
+
+    .content div p {
+        font-size: 2vw;
+    }
+
+    .content div:last-of-type img {
+        height: 15vw;
+    }
+
+    #apply {
+        font-size: 2vw;
+    }
+
+    #apply a {
+        font-size: 2vw;
+    }
+
+    #about {
+        font-size: 2vw;
+    }
+
+    #about h1 {
+        font-size: 6vw;
+    }
+
+    #about hr {
+        margin-left: 10%;
+        width: 75%;
+    }
+
+    #about button {
+        font-size: 2vw;
+        max-width: 100%;
+    }
+
+    #aboutButtons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+    }
+
+    #about2 {
+        font-size: 2vw;
+    }
+
+
+
+    #gallery img {
+        width: 30vw;
+    }
+
+    #gallery {
+        padding: 50px;
+    }
+
+    #about2 #gallery a {
+        font-size: 4vw;
+    }
+
+    #ctso {
+        font-size: 4vw;
+    }
+
+    #ctso h1 {
+        font-size: 5vw;
+    }
+
+
+
+    #ctso div {
+        max-height: 800px;
+    }
+
+    #ctso a {
+        font-size: 3vw;
+    }
+
+    #contact {
+        font-size: 3vw;
+    }
+}
