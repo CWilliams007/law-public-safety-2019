@@ -13,9 +13,19 @@ Authors: Chad Williams, Gabriel Fuentes
     <title>Home | Law & Public Safety</title>
     <link rel="stylesheet" href="../CSS/destyle.css" />
     <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/slideShow.css" />
 </head>
 
 <body>
+
+    <div class="mobileNav" id="mobile">
+        <a href="index.html#top">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#ctso">CTSO</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+
     <div>
         <nav>
             <img src="../img/mainLogo.png" id="mainLogo" alt="">
@@ -29,13 +39,41 @@ Authors: Chad Williams, Gabriel Fuentes
         </nav>
     </div>
 
-    <div id="images">
-        <div id="image"><img src="../img/gallery.jpg" alt=""></div>
-    </div>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"></div>
+
+  <div class="mySlides fade"></div>
+
+  <div class="mySlides fade"></div>
+
+  <div class="mySlides fade"></div>
+
+  <div class="mySlides fade"></div>
+
+  <div class="mySlides fade"></div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
 
 
 
-    <script src="main.js" async defer></script>
+    <script src="../JS/sS.js" async defer></script>
 </body>
 
 </html>
