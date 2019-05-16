@@ -20,11 +20,6 @@ function mobileNavToggle() {
 	mNav = document.getElementById("mobile").classList.toggle("open");
 }
 
-function mobileNavScale() {
-	mNav = document.getElementById("mobile").classList.remove("open");
-}
-
-
 function instructorToggle() {
 	document.getElementById("instructor").classList.toggle("closedInstructor")
 }

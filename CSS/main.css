@@ -136,7 +136,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 230px;
+    min-width: 250px;
 }
 
 #heroImage div {
@@ -418,8 +418,6 @@ button#curriculum {
 .closedInstructor {
     display: none;
 }
-
-
 
 
 
@@ -749,6 +747,14 @@ footer h1 {
     text-decoration: underline;
 }
 
+#center2 {
+    text-align: left;
+}
+
+#applyNow {
+    font-size: 24px;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 991px) {
 
@@ -827,6 +833,7 @@ footer h1 {
 
     body {
         font-size: 10px;
+        min-width: 250px;
     }
 
     .content hr {
@@ -933,6 +940,9 @@ footer h1 {
 
 /* @media only screen and (min-width: 992px) {} */
 @media only screen and (max-width: 769px) {
+    #applyNow {
+    font-size: 4vw;
+    }
     .content div h1 {
         font-size: 2vw;
     }
@@ -1020,4 +1030,10 @@ footer h1 {
     #contact {
         font-size: 3vw;
     }
+
+    #heroImage p, #grid p, #grid a {
+        font-size: 4vw;
+    }
+
+    
 }
